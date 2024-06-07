@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Images/contact\ us\ page.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 121px;
+    cursor: pointer;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2px 20px;
+    position: relative;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 655;
+    margin-left: 18px;
+    margin-top: 1px;
+}
+.nav-links ul li a{
+    color: #505f1c;
+    text-decoration: none;
+    font-size: 16.4px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #505f1c;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90;
+    color: #505f1c;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 72px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-box p{
+    margin: 45px 0 45px;
+    font-size: 16.5px;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*form page*/
+
+.form{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.form h2{
+    font-size: 60px;
+    font-weight: 900;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(Images/contactform.jpg);
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+.contact-left-title h3{
+    font: 900;
+    color: #505f1c;
+    font-size: 80px;
+    margin-bottom: 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.contact-left-title hr{
+    border: none;
+    width: 780px;
+    height: 10px;
+    background-color: #505f1c;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.contact-inputs{
+    width: 780px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    font-weight: 500;
+    color: black;
+    border-radius: 20px;
+    font-size: 13px;
+}
+.contact-left textarea{
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+.contact-inputs:focus{
+    border: 3px solid #505f1c;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: #505f1c;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.contact-left button:hover{
+    border: 1px solid white;
+    background: white;
+    transition: 1s;
+    color: #505f1c;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*footer css*/
+
+footer {
+    margin-bottom: 50px;
+    padding: 0;
+    margin-top: 150px;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #808080;
+}
+
+h6 {
+    font-size: 31px;
+    font-weight: 900;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: black;
+    margin-bottom: 100px;
+}
+
+p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-align: center;
+    color: #505f1c;
+    font-size: 17px;
+    margin: 10px 40px;
+}
+
+.social-icon {
+    color: black;
+    transition: color 0.2s;
+    font-size: xx-large;
+    text-decoration: none;
+    margin: 100px 40px;
+}
+
+    .social-icon:hover {
+        color: #505f1c;
+    }

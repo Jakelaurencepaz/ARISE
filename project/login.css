@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+   font-family: "Plus Jakarta Sans", sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+.form-container{
+    min-height: 100vh;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 80px;
+ }
+ 
+ .form-container form{
+    width: 500px;
+    background-color: #fff;
+    border:1px solid #000;
+    padding:20px;
+    text-align: center;
+ }
+ 
+ .form-container form .title{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+ }
+ 
+ 
+ .form-container form .box{
+    width: 100%;
+    padding:12px 14px;
+    font-size: 16.5px;
+    text-transform: none;
+    border:2px solid #000;
+    margin:10px 0;
+ }
+ 
+ .form-container form .form-btn{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding:10px;
+    background-color: #000;
+    color:#fff;
+    cursor: pointer;
+    margin:10px 0;
+ }
+ 
+ .form-container form .form-btn:hover{
+    background-color: #505f1c;
+ }
+ 
+ .form-container form p{
+    font-size: 16.5px;
+    margin-top: 20px;
+ }
+ 
+ .form-container form p a{
+     color:#505f1c;
+ }
+ 
+ .form-container form .error-msg{
+    display: block;
+    width: 100%;
+    padding:10px 0;
+    margin:10px 0;
+    background-color: #505f1c;
+    font-size: 16.5px;
+    color:#fff;
+ }

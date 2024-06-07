@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Images/homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 122px;
+    cursor: pointer;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2px 26px;
+    position: relative;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+}
+.nav-links ul li a{
+    color: #505f1c;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #505f1c;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90;
+    color: #505f1c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 52px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-box p{
+    margin: 45px 0 45px;
+    font-size: 14px;
+    color: #505f1c;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.hmp-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #505f1c;
+    padding: 12px 34px;
+    font-size: 13px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: #505f1c;
+    position: relative;
+    cursor: pointer;
+}
+.hmp-btn:hover{
+    border: 1px solid white;
+    background: white;
+    transition: 1s;
+    color: #505f1c;
+    font-size: 13px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*projects css*/
+
+.projects{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.projects h2{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.projects p{
+    color: #505f1c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+    padding: 30px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.projects-col{
+    float: left;
+    width: 32%;
+    border: 1px;
+    margin-bottom: 30px;
+    padding: 5px;
+    transition: 1s;
+}
+.projects-col:hover{
+    background-color: #505f1c;
+    opacity: 100%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*info css*/
+
+.info{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+.info h3{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.info p{
+    color: #505f1c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+    padding: 30px;
+    padding-bottom: 100px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.info-col{
+    float: left;
+    width: 32%;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+.info-col h4{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-top: 30px;
+}
+.info-col p{
+    font-size: 14px;
+    color: #505f1c;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*contact css*/
+
+.contact{
+    margin: -30px auto;
+    margin-bottom: 100px;
+    width: 80%;
+    background-image: url(Images/contact1cropped.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.contact h5{
+    font-size: 45px;
+    font-weight: 900;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: black;
+    margin-bottom: 35px;
+}
+
+/*footer css*/
+
+footer {
+    margin-bottom: 50px;
+    padding: 0;
+    margin-top: 100px;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #808080;
+}
+
+h6 {
+    font-size: 25px;
+    font-weight: 900;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: black;
+    margin-bottom: 100px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #505f1c;
+    font-size: 14px;
+    margin: 10px 30px;
+}
+
+.social-icon {
+    color: black;
+    transition: color 0.2s;
+    font-size: x-large;
+    text-decoration: none;
+    margin: 100px 30px;
+}
+
+    .social-icon:hover {
+        color: #505f1c;
+    }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="homepage.php"><img src="Images/newweblogo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="homepage.php">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.php">LOGOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-box">
+            <h1><strong>CONTACT US</strong></h1>
+            <P>Scroll down to contact ARISE Headqaurters...</P>
+        </div>
+    </section>
+
+    <!--FILL-IN CONTACT FORM-->
+
+    <section class="form">
+        <h2><strong>Reach Out To Us...</strong></h2>
+    </section>
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h3><strong>Get in touch with ARISE</strong></h3>
+                <hr>
+            </div>
+            <!--To look at the email or feedback sent by the user check the email jvkepaz@gmail.com-->
+            <input type="hidden" name="access_key" value="b3cb31cf-2d2b-4179-84bc-e9f502833ae7">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="What are you thinking of..." class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!--SOCIAL MEDIA FOOTER-->
+
+    <footer>
+        <h6><strong>Thank you for visiting ARISE</strong></h6>
+        <p>Come join us! As team ARISE is constantly making lives better <br /> and redefing the households of one another.</p>
+        <p>
+            <a class="social-icon" href="https://www.linkedin.com/in/jake-laurence-paz-873317286/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+
+            <a class="social-icon" href="https://www.instagram.com/jakelaurencepaz/?hl=en">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+
+            <a class="social-icon" href="https://github.com/Jakelaurencepaz">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+
+            <a class="social-icon" href="https://pin.it/2J9364P">
+                <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+        </p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
